@@ -11,6 +11,7 @@ public class GameControl : MonoBehaviour {
     public Text ScoreText;
     public bool GameOver = false;
     public float ScrollSpeed = -1.5f; // will be accessible by the public instance object
+
     private int score = 0;
 
 	// Use this for initialization

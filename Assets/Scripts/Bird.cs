@@ -18,7 +18,6 @@ public class Bird : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
         if(isDead == false) {
             if(Input.GetMouseButtonDown(0)) {
                 rb2d.velocity = Vector2.zero;

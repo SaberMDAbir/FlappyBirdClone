@@ -13,7 +13,7 @@ public class ColumnPool : MonoBehaviour {
     private GameObject[] Columns;
     private Vector2 ObjectPoolPosition = new Vector2(-15f, -25f);
     private float TimeSinceLastSpawned;
-    private float SpawnXPosition = 10f;
+    private float SpawnXPosition = 1f;
     private int CurrentColumn = 0;
 
 	// Use this for initialization
