@@ -8,7 +8,7 @@ public class GameControl : MonoBehaviour {
 
     public static GameControl instance;
 	public GameObject GameOverText;
-    public Text ScoreText;
+    public Text CurrentScore;
     public bool GameOver = false;
     public float ScrollSpeed = -1.5f; // will be accessible by the public instance object
 
@@ -38,7 +38,7 @@ public class GameControl : MonoBehaviour {
             return;
         }
         score++;
-        ScoreText.text = "Score: " + score.ToString();
+        CurrentScore.text = "Score: " + score.ToString();
     }
 
 	public void BirdDied () {
