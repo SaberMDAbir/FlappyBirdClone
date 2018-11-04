@@ -9,10 +9,13 @@ public class GameControl : MonoBehaviour {
     public static GameControl instance;
 	public GameObject GameOverText;
     public Text CurrentScore;
+    public Text HighScoreDisplay;
     public bool GameOver = false;
     public float ScrollSpeed = -1.5f; // will be accessible by the public instance object
 
     private int score = 0;
+    private int highScore = 0;
+    private string highScoreKey = "HighScore";
 
 	// Use this for initialization
 	void Awake () {
@@ -24,14 +27,14 @@ public class GameControl : MonoBehaviour {
             Destroy(gameObject); 
         }
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         // game needs to be over and the player has attempted to flap
-		if(GameOver == true && Input.GetMouseButtonDown(0)) {
+        if (GameOver == true && Input.GetMouseButtonDown(0)) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-	}
+    }
 
     public void BirdScored () {
         if(GameOver) {
@@ -44,5 +47,5 @@ public class GameControl : MonoBehaviour {
 	public void BirdDied () {
         GameOverText.SetActive(true);
         GameOver = true;
-	}
+    }
 }

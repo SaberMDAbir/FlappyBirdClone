@@ -309,6 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOverText: {fileID: 4133459}
   CurrentScore: {fileID: 1964292961}
+  HighScoreDisplay: {fileID: 1990517178}
   GameOver: 0
   ScrollSpeed: -3.5
 --- !u!4 &386400790
@@ -338,7 +339,7 @@ MonoBehaviour:
   ColumnPoolSize: 5
   ColumnPreFab: {fileID: 1396305790648432, guid: 0f0fa2cc9c4c74be284a03e734a014ee,
     type: 2}
-  SpawnedRate: 1
+  SpawnedRate: 1.4
   ColumnMin: -2
   ColumnMax: 2
 --- !u!1 &411233645
